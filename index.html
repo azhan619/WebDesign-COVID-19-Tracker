@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Covid-19 tracker
+    </title>
+    <link rel="shortcut icon" href="./resources/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./resources/css/grid.css">
+    <link rel="stylesheet" href="./resources/css/design.css">
+</head>
+
+<body class="loading">
+
+    <!-- Top Section -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="" class="logo">
+                    C<i class="bx bxs-virus-block "></i>VID-19 Latest Information
+                </a>
+                <div class="darkmode-switch" id="darkmode-switch">
+                    <span>
+                        <i class="bx bxs-moon"></i>
+                        <i class="bx bxs-sun"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Top Section -->
+
+    <!-- Info -->
+    <div class="main-body">
+        <div class="container">
+            <!-- country select -->
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box">
+                        <div class="location" id="location">
+                            <div class="location-tg" id="location-tg">
+                                <span>
+                                   Click to find COVID-19 Cases By Country
+                                </span>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                            <div class="location-li" id="location-li">
+                                <input type="text" placeholder="Enter the name of Country">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end country select -->
+
+            <!-- tracking information -->
+            <div class="row">
+                <!-- left content -->
+                <div class="col-8 col-md-12 col-sm-12">
+                    <div class="row">
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-confirmed">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-virus"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="confirmed-total">000,000,000</h5>
+                                        <span>Total Confirmed Cases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-recovered">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-smile"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="recovered-total">000,000,000</h5>
+                                        <span>Total Recovered Cases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-death">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-sad"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="death-total">000,000,000</h5>
+                                        <span>Total Deaths</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+                           <!-- top country affected -->
+                            <div class="box">
+                                                                    <div class="box-header">
+                                                                        Countries affected most by COVID-19
+                                                                    </div>
+                                                                    <div class="box-body">
+                                                                        <table class="table-countries" id="table-countries">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        Country
+                                                                                    </th>
+                                                                                    <th>Confirmed</th>
+                                                                                    <th>Recovered</th>
+                                                                                    <th>Deaths</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>test</td>
+                                                                                    <td>test</td>
+                                                                                    <td>test</td>
+                                                                                    <td>test</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                            </div>
+                            <!-- end top country affected -->
+
+                        <!-- all time chart -->
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="box-header">
+                                  COVID-19 Progress since the start of pandemic
+                                </div>
+                                <div class="box-body">
+                                    <div id="all-time-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end all time chart -->
+
+                        <!-- embed video -->
+                        <div class="col-6 col-md-6 col-sm-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    Symptoms of COVID-19
+                                </div>
+                                <div class="box-body">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/U8r3oTVMtQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end embed video -->
+
+                        <!-- embed video -->
+                        <div class="col-6 col-md-6 col-sm-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    WHO Guidelines for protection against COVID-19
+                                </div>
+                                <div class="box-body">
+                                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/lCABKB11vi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end embed video -->
+                    </div>
+                </div>
+                <!-- end left content -->
+
+                <!-- right content -->
+                <div class="col-4 col-md-12 col-sm-12">
+                    <!-- 30 days chart -->
+                    <div class="box">
+                        <div class="box-header">
+                            last 30 days
+                        </div>
+                        <div class="box-body">
+                            <div id="days-chart"></div>
+                        </div>
+                    </div>
+                    <!-- end 30 days chart -->
+
+
+                    <!-- recovery rate chart -->
+                    <div class="box">
+                        <div class="box-header">
+                            recovery rate
+                        </div>
+                        <div class="box-body">
+                            <div id="recover-rate-chart"></div>
+                        </div>
+                    </div>
+                    <!-- end recovery rate chart -->
+
+                   
+                </div>
+                <!-- end right content -->
+            </div>
+            <!-- end tracking information -->
+        </div>
+    </div>
+    <!-- End Info -->
+
+    <!-- footer -->
+    <div class="footer">
+        
+        Designed by <a href="https://github.com/azhan619" target="_blank">Azhan Khan Ghori</a>
+    </div>
+    <!-- end footer -->
+
+    <!-- loader -->
+    <div class="loader">
+        <i class="bx bxs-virus bx-spin"></i>
+    </div>
+    <!-- end loader -->
+
+    <!-- apexchart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- JS -->
+    <script src="./resources/javascript/getData.js"></script>
+    <script src="./resources/javascript/covidFunc.js"></script>
+    <script src="./resources/javascript/design.js"></script>
+</body>
+
+</html>
